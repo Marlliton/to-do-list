@@ -18,6 +18,8 @@ export default async function handler(
       if (!(await compare(password, user.password)))
         return res.status(400).json({ error: "Incorrect email or pass" });
 
+      user.password = undefined;
+
       res.status(200).json({
         user,
         token: generateToken(user.id, key),
