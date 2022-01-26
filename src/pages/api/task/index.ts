@@ -46,6 +46,7 @@ export default async function handler(
     const tasks = await TaskDB.find({ userId: req.query.userId });
 
     res.status(200).json({ tasks });
+    
     // res.statusCode = 200;
     // res.json({
     //   tasks

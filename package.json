@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/react-lottie": "^1.2.6",
     "axios": "^0.25.0",
     "bcryptjs": "^2.4.3",
     "jsonwebtoken": "^8.5.1",
@@ -15,6 +16,8 @@
     "next": "12.0.8",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-hook-form": "^7.25.1",
+    "react-lottie": "^1.2.3",
     "sass": "^1.49.0"
   },
   "devDependencies": {
