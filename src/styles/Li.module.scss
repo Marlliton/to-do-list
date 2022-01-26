@@ -1,0 +1,27 @@
+.li {
+  display: flex;
+  height: 40;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding: .8rem;
+
+  border-radius: 0.8rem;
+  box-shadow: 1px 1px 4px grey;
+
+  transition: 0.3s;
+  margin-bottom: 1rem;
+
+  color: #525252;
+  font-size: 1.2rem;
+  
+  &:hover {
+    scale: 1.025;
+    cursor: pointer;
+  }
+}
+
+.stripe {
+  color: #CCCCCC;
+  text-decoration: line-through;
+}

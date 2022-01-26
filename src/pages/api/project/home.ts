@@ -1,5 +1,5 @@
 import authMiddleware from "../../../middlewares/authMiddleware";
-import User from "../../../utils/models/User";
+import User from "../../../utils/models/UserDB";
 
 async function handler(req, res) {
   const user = await User.findById(req.id);

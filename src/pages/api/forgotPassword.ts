@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { generateHash } from "../../utils/bcrypt";
-import User from "../../utils/models/User";
+import User from "../../utils/models/UserDB";
 
 export default async function handler(
   req: NextApiRequest,

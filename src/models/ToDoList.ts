@@ -23,6 +23,12 @@ export class ToDoList {
     return this.#usedFilter;
   }
 
+  deleteAllCompleted(): ToDoList {
+    const all = this.#all.filter(task => !task.isFinished);
+
+    return new ToDoList(all, Filter.NONE);
+  }
+
   showAll(): boolean {
     return this.#usedFilter === Filter.NONE;
   }
@@ -63,5 +69,12 @@ export class ToDoList {
     } else {
       return [...tasks];
     }
+  }
+  modifyTasks(taskModified: Task): ToDoList {
+    const all = this.#all.map(task => {
+      return task.id === taskModified.id ? taskModified : task;
+    });
+
+    return new ToDoList(all, this.#usedFilter);
   }
 }

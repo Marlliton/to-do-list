@@ -1,8 +1,13 @@
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 18rem 1fr 7.5rem;
+  grid-template-areas:
+    "header "
+    "main"
+    "footer";
 
   height: 100%;
+
+  position: relative;
 }

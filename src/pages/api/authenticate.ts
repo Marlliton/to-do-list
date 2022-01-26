@@ -2,7 +2,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 import secretKey from "../../config/secret-key.json";
 import { compare } from "../../utils/bcrypt";
 import { generateToken } from "../../utils/jwt";
-import User from "../../utils/models/User";
+import User from "../../utils/models/UserDB";
 
 export default async function handler(
   req: NextApiRequest,

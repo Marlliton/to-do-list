@@ -1,0 +1,25 @@
+.container {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  padding: 0;
+  border: solid 2px #525252;
+
+  cursor: pointer;
+  transition: 0.3s;
+
+  margin-right: 2rem;
+
+
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+.purple {
+  background-color: #9d5efe;
+}
+
+.white {
+  background-color: #fff;
+}

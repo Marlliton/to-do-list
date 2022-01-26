@@ -1,14 +1,14 @@
 export default class Task {
-  #id: number;
+  #id: string;
   #description: string;
   #isFinished: boolean;
 
-  constructor(id: number, description: string, isFinished = false) {
+  constructor(id: string, description: string, isFinished = false) {
     this.#id = id;
     this.#description = description;
     this.#isFinished = isFinished;
   }
- 
+
   get id() {
     return this.#id;
   }
@@ -21,11 +21,11 @@ export default class Task {
     return this.#isFinished;
   }
 
-  static createPendingTask(id: number, description: string): Task {
+  static createPendingTask(id: string, description: string): Task {
     return new Task(id, description);
   }
 
-  static createFinishedTask(id: number, description: string): Task {
+  static createFinishedTask(id: string, description: string): Task {
     return new Task(id, description, true);
   }
 
@@ -40,4 +40,6 @@ export default class Task {
   private switchToFinished() {
     return Task.createFinishedTask(this.#id, this.#description);
   }
+
+  
 }
