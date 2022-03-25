@@ -1,9 +1,9 @@
 import { ReactNode } from "react";
-import styles from "../styles/Button.module.scss";
+import styles from "./Button.module.scss";
 
 type ButtonProps = {
   children: ReactNode;
-  onClick: () => void;
+  onClick?: () => void;
   buttonFilter?: "filter" | "delete";
   isActive?: boolean;
 };

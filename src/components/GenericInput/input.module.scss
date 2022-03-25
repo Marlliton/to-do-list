@@ -1,0 +1,39 @@
+.container {
+  width: 70%;
+  input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    border: none;
+
+    padding: 1rem 1rem;
+    border-radius: 0.8rem;
+    
+    width: 100%;
+    
+    background-color: rgb(231, 231, 231);
+    
+    
+    font-size: 1rem;
+    margin-bottom: 1rem;
+
+    &:focus {
+      outline: 1px solid #9d5efe;
+      background-color: #fff;
+    }
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+}

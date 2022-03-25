@@ -2,7 +2,7 @@ import jwt from "jsonwebtoken";
 
 export function generateToken(id: string, secretKey: string) {
   return jwt.sign({ id }, secretKey, {
-    expiresIn: 60 * 60 * 8, //  8 hours
+    expiresIn: 300, //  5 minutes
   });
 }
 

@@ -1,34 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Projeto lista de tarefas
 
-## Getting Started
+_Projeto ainda em desenvolvimento_
 
-First, run the development server:
+## O que o usuário poderá fazer?
+1. O usuário poderá fazer login em sua conta. Se não tiver uma, poderá criá-la.
+2. O usuário terá uma área reservada para criar e excluir suas tarefas, além de poder alterar o status de cada tarefa.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Como o projeto se parece?
+*Como o projeto está em desenvolvimento a interface pode está diferente.*
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![2022-03-25_15-56](https://user-images.githubusercontent.com/67978032/160186369-140059ed-5dcb-4197-a374-095321c2e81e.png)
+****
+![2022-03-25_15-55](https://user-images.githubusercontent.com/67978032/160186670-cf80408b-ef11-4447-8715-3b3b786849fe.png)
+****
+![2022-03-25_15-58](https://user-images.githubusercontent.com/67978032/160186745-3d771fcc-1f76-4524-9526-0b90ae7023b7.png)
+****
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Do que eu preciso para rodar o projeto?
+1. Você precisa do mongoDB instalado na sua máquina e rodando
+[Documentação oficial do mongo](https://www.mongodb.com/docs/manual/installation/)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+2. Você precisa clonar esse repositório
+`git clone git@github.com:Marlliton/to-do-list.git`
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+3. Instale as dependências
+`yarn` ou `npm i` 
 
-## Learn More
+4. Pode iniciar o projeto
+`yarn dev` ou `npm run dev`
 
-To learn more about Next.js, take a look at the following resources:
+## Posso contribuir?
+Sim, fique a vontade para fazer suas alterações e melhorias. :)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

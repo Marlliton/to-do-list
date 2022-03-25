@@ -1,6 +1,6 @@
 import Link from "next/link";
-import styles from "../styles/Header.module.scss";
-import { Input } from "./Input";
+import styles from "./Header.module.scss";
+import { Input } from "../HeaderInput";
 
 type HeaderProps = {
   onChange: (msg: string) => void;

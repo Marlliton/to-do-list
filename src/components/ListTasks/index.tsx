@@ -1,8 +1,8 @@
-import Task from "../models/Task";
-import { ToDoList } from "../models/ToDoList";
-import styles from "../styles/ListTasks.module.scss";
-import { FooterList } from "./FooterList";
-import { Li } from "./Li";
+import Task from "../../models/Task";
+import { ToDoList } from "../../models/ToDoList";
+import styles from "./ListTasks.module.scss";
+import { FooterList } from "../Footer";
+import { Li } from "../Li";
 
 type ListProps = {
   tasks: ToDoList;

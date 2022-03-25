@@ -1,6 +1,6 @@
-import { ToDoList } from "../models/ToDoList";
-import styles from "../styles/Footer.module.scss";
-import { Button } from "./Button";
+import { ToDoList } from "../../models/ToDoList";
+import styles from "./Footer.module.scss";
+import { Button } from "../Button";
 
 type FooterProps = {
   tasks: ToDoList;
@@ -50,7 +50,7 @@ export function FooterList(props: FooterProps) {
           buttonFilter="delete"
           onClick={() => {
             props.filter(props.tasks.deleteAllCompleted());
-            props.deleteCompletedTasks()
+            props.deleteCompletedTasks();
           }}
         >
           Apagar Concluídas

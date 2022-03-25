@@ -43,10 +43,10 @@ export default async function handler(
       res.status(400).json({ error });
     }
   } else if (req.method === "GET") {
+    console.log(req.body, "query");
     const tasks = await TaskDB.find({ userId: req.query.userId });
 
     res.status(200).json({ tasks });
-    
     // res.statusCode = 200;
     // res.json({
     //   tasks

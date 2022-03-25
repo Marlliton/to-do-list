@@ -1,8 +1,8 @@
 import { useState } from "react";
-import icon from "../../public/images/add.svg";
-import styles from "../styles/Input.module.scss";
-import { Button } from "./Button";
-import { Image } from "./Image";
+import icon from "../../../public/images/add.svg";
+import { Button } from "../Button";
+import { Image } from "../MyImage";
+import styles from "./Input.module.scss";
 
 type InputProps = {
   onChange: (description: string) => void;

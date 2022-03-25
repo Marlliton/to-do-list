@@ -10,6 +10,7 @@ export default async function handler(
 ) {
   const { email, password } = req.body;
   const key = secretKey["secret-key"];
+
   if (req.method === "POST") {
     try {
       const user = await User.findOne({ email }).select("+password");

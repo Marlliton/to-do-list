@@ -1,4 +1,4 @@
-import styles from "../styles/Checked.module.scss";
+import styles from "./Checked.module.scss";
 
 type CheckedProps = {
   isChecked: boolean;

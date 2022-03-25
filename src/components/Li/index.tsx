@@ -1,5 +1,5 @@
-import styles from "../styles/Li.module.scss";
-import { Checked } from "./Checked";
+import styles from "./Li.module.scss";
+import { Checked } from "../Checked";
 
 type LiProps = {
   description: string;

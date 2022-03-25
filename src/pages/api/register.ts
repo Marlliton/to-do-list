@@ -9,6 +9,10 @@ export default async function handler(
   if (req.method == "POST") {
     const { email } = req.body;
     const user = { ...req.body };
+    
+    if (!user.email || !user.name || !user.password) {
+      return res.status(400).json({ message: "Missing data" });
+    }
     const hash = await generateHash(user.password);
     user.password = hash;
 
@@ -26,5 +30,5 @@ export default async function handler(
     } catch (error) {
       return res.status(400).send({ Error: "Registration failed", error });
     }
-  } 
+  }
 }
