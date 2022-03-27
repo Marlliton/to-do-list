@@ -18,6 +18,7 @@ _Projeto ainda em desenvolvimento_
 
 ## Do que eu preciso para rodar o projeto?
 1. Você precisa do mongoDB instalado na sua máquina.
+
 [Documentação oficial do mongo](https://www.mongodb.com/docs/manual/installation/)
 
 2. Você precisa clonar esse repositório
